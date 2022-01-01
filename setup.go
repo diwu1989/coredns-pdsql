@@ -38,8 +38,8 @@ func setup(c *caddy.Controller) error {
 	}
 
 	cache, err := ristretto.NewCache(&ristretto.Config{
-		NumCounters: 1e7,     // number of keys to track frequency of (10M).
-		MaxCost:     1 << 30, // maximum cost of cache (1GB).
+		NumCounters: 1 << 20, // number of keys to track frequency of (1,048,576).
+		MaxCost:     1 << 26, // maximum cost of cache (64mb).
 		BufferItems: 64,      // number of keys per Get buffer.
 	})
 	if err != nil {
