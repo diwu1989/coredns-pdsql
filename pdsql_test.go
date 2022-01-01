@@ -1,8 +1,8 @@
 package pdsql_test
 
 import (
-	"github.com/mrfelfel/coredns-pdsql"
-	"github.com/mrfelfel/coredns-pdsql/pdnsmodel"
+	"github.com/diwu1989/coredns-pdsql"
+	"github.com/diwu1989/coredns-pdsql/pdnsmodel"
 	"testing"
 
 	"github.com/coredns/coredns/plugin/pkg/dnstest"

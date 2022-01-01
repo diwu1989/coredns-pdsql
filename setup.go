@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/dgraph-io/ristretto"
-	"github.com/mrfelfel/coredns-pdsql/pdnsmodel"
+	"github.com/diwu1989/coredns-pdsql/pdnsmodel"
 
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/core/dnsserver"

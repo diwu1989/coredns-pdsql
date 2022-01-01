@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/dgraph-io/ristretto"
-	"github.com/mrfelfel/coredns-pdsql/pdnsmodel"
+	"github.com/diwu1989/coredns-pdsql/pdnsmodel"
 
 	"github.com/coredns/coredns/plugin"
 	"github.com/coredns/coredns/request"
@@ -105,7 +105,6 @@ func (pdb PowerDNSGenericSQLBackend) ServeDNS(ctx context.Context, w dns.Respons
 				}
 			case *dns.CNAME:
 				rr.Hdr = hrd
-
 				rr.Target = dns.Fqdn(v.Content)
 			case *dns.A:
 				rr.Hdr = hrd
